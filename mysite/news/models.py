@@ -23,7 +23,7 @@ class Category(models.Model):
     title = models.CharField(max_length=125, db_index=True, verbose_name="Наименование категории")
 
     def __str__(self):
-        return f"Категория {self.title}"
+        return self.title
 
     class Meta:
         verbose_name = "Категория"
