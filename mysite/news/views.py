@@ -16,7 +16,6 @@ def get_index(request):
 
 
 def get_category(request, category_id):
-    print('PRINT!', category_id)
     news = News.objects.filter(category_id=category_id)
     categories = Category.objects.all()
     category = Category.objects.get(id=category_id)
